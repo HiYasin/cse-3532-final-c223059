@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '../components/Container';
 import Navbar from '../components/Navbar';
+import Content from '../components/Content';
 
 const Home = () => {
     return (
@@ -11,7 +12,9 @@ const Home = () => {
             </Container>
         </header>
         <main>
-
+            <Container>
+                <Content></Content>
+            </Container>
         </main>
         <footer>
 
