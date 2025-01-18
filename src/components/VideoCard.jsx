@@ -18,14 +18,14 @@ const VideoCard = ({ videoInfo }) => {
           <h2 className="text-md font-bold">{title}</h2>
           <div className="flex items-center gap-3 justify-between">
             <p>{authors[0].profile_name}</p>
-            {authors[0].verified !== "" || authors[0].verified !== false ? (
+            {authors[0].verified  !== false ? 
               <p className="badge badge-success text-white text-xs">Verified</p>
-            ) : (
+            :
               <></>
-            )}
+            }
           </div>
           <div>
-            <p className="text-sm text-gray-700 font-light">
+            <p className="text-sm text-gray-700">
               {others.views} views
             </p>
           </div>

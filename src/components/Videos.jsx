@@ -27,8 +27,9 @@ const Videos = ({category}) => {
             {
                 videos.length>0?videos.map(video=><VideoCard videoInfo={video}></VideoCard>)
                 :
-                <div className='flex justify-center md:col-span-2  lg:col-span-4'>
+                <div className='flex flex-col items-center justify-center md:col-span-2 mt-10 lg:col-span-4'>
                     <img src={empty} alt="" />
+                    <p className='text-2xl font-semibold'>Ops! Sorry, there isn't any content.</p>
                 </div>
             }
         </div>
